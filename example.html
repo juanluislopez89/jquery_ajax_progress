@@ -18,7 +18,7 @@
 				<h1>jQuery Progress Example</h1>
 				<hr>
 				<div id="progress_example"></div>
-				<button type="button" class="btn btn-default" data-target="#progress_example">Start</button>	
+				<button type="button" class="btn btn-default" data-target="#progress_example">Start</button>
 			</div>
 		</div>
 	</div>
@@ -33,7 +33,12 @@
 <script>
 	$(document).ready(function(){
 		$("#progress_example").ajax_progress({
-			class : "progress-bar-success",
+			class : "progress-bar-success",					// Bootstrap class for progress bar
+			striped: true,									// Striped progress bar
+			url: "example.php/repetitive_server_function", 	// URL to call
+			onComplete: function(){							// Function to call when progress is complete
+				alert("Done!");
+			}
 		});
 	});
 </script>
