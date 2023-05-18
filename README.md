@@ -1,1 +1,2 @@
-# jquery_ajax_progress
+# jQuery AJAX Progress
+This is a plugin for making recurring AJAX calls to a server in order to provide feedback on the process in the response of each call. It is designed for situations where, for example, a large number of PDFs need to be generated on the server, compressed into a zip file, and then downloaded, or when thumbnails need to be generated for many images hosted on the server. In summary, these are processes that, on their own, may reach the memory or timeout limit of your server, but can be divided into smaller processes.
