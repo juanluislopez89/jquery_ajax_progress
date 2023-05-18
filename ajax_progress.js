@@ -1,5 +1,5 @@
 (function($) {
-    $.fn.progressCallback = function(options) {
+    $.fn.ajax_progress = function(options) {
         var settings = $.extend({
             current_item: null,
             total_items: null,

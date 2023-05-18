@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Bootstrap 3.3.7 CDN -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- Bootstrap 3.3.7 js CDN -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<title>jQuery Progress Example</title>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<h1>jQuery Progress Example</h1>
+				<hr>
+				<div id="progress_example"></div>
+				<button type="button" class="btn btn-default" data-target="#progress_example">Start</button>	
+			</div>
+		</div>
+	</div>
+	
+</body>
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- progress.js -->
+<script src="ajax_progress.js"></script>
+
+<!-- Example code -->
+<script>
+	$(document).ready(function(){
+		$("#progress_example").ajax_progress({
+			class : "progress-bar-success",
+		});
+	});
+</script>
+</html>
