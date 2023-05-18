@@ -1,3 +1,6 @@
+![image](https://github.com/juanluislopez89/jquery_ajax_progress/assets/52567376/2af693c2-0001-4c3f-a4cd-857bb10cb689)
+
+
 # jQuery AJAX Progress
 This is a plugin for making recurring AJAX calls to a server, providing feedback on the process in the response of each call. It is designed for situations where, for example, a large number of PDFs need to be generated on the server, compressed into a zip file, and then downloaded, or when thumbnails need to be generated for many images hosted on the server. 
 
